@@ -20,6 +20,10 @@ body {
 #pic2 {
 	position: absolute; top: 9px; left: 20px;
 }
+
+#pic3 {
+	position: absolute; top: 9px; right: 20px;
+}
 	
 .center {
   	display: block;
