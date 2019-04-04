@@ -18,10 +18,10 @@ body {
 	}
 	
 #pic2 {
-	position: absolute; top: 10px; left: 0px;
+	position: absolute; top: 10px; left: 10px;
 }
 	
-.center {
+.center1 {
   	display: block;
   	margin-left: auto;
 	margin-right: auto;
