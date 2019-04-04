@@ -17,12 +17,6 @@ body {
 	background-color: silver;
 	}
 	
-#pic1 {
-	position: absolute; top: 9px; 
-	margin: auto; 
-	width: 30%; 
-}
-	
 #pic2 {
 	position: absolute; top: 9px; left: 20px;
 }
