@@ -17,9 +17,23 @@ body {
 	background-color: silver;
 	}
 	
+#pic2 {
+	position: absolute; top: 50px; left: 0px;
+}
+	
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
+  	display: block;
+  	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+.right {
+	position: absolute;
+	right: 0px;
+	width: 300px;	
+}
+
+.clearfix {
+  overflow: auto;
 }
