@@ -1,51 +1,43 @@
 a:link {
 	color:yellow;
 	}
-	
+
 a:visited {
 	color: pink;
 	}
-	
+
 p {
 	font-family: "Ariel", "Helvetica", sans-serif;
-	<!-- Google fonts is easy --> 
+	<!-- Google fonts is easy -->
 	font-size: 14px;
 	font-style: bold;
 	}
 
-h5 {
-	color: red;
-	font-size: 24px;
-	}
-	
-hr {
-	width: 50%;
-	}
-	
-#ex1 {
-	position: absolute; top: 100px; left: 200px;
-	background-color: white;
-	padding: 20px;
-	border-style: solid;
-	border-width: 5px;
-	border-color: green;
-	}
-	
 body {
 	background-color: silver;
 	}
-	
-#pic1 {
-	position: absolute; top: 200px; left: 200px;
-	border-style: solid;
-	border-width: 5px;
-	border-color: green;
-	}
-	
-#main {
-	background-color: white;
-	border-style: solid;
-	border-width: 5px;
-	border-color: green;
-	width: 400px;
-	}
+
+#pic2 {
+	position: absolute; top: 8px; left: 20px;
+}
+
+#pic3 {
+	position: absolute; top: 40px; right: 20px;
+}
+
+.center1 {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 30%
+}
+
+.right {
+	position: absolute;
+	right: 0px;
+	width: 300px;
+}
+
+.clearfix {
+  overflow: auto;
+}
