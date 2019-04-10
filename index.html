@@ -29,36 +29,74 @@
 
 	.bg {
 		background-image: url("graphics/media-elements/dream-sky.jpg");
+		position: relative;
 		height: 100%;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 
-	.button {
-		background-color: #2196F3;
-		color: #2196F3;
-		position: relative;
+	.buttonA {
+		background-color: transparent;
+		color: white;
+		position: absolute;
 		outline: none;
 	}
 
-	.button:hover {
-		color: #2196F3
+	.buttonA:hover {
+		background-color: #2196F3
+	}
+
+	.buttonA:onclick {
+		animation: 3s ease 0s normal forwards 1 fadein;
 	}
 
 	#button0 {
+		position: absolute;
+		left: 50%;
+		margin-left: -119px;
+		display: inline-block;
+	}
+
+	#button1 {
+
+		display: none;
+	}
+
+	#image0 {
 		background-color: transparent;
-		position: absolute; top: 5px; left: 10px;
+		position: absolute; top: 6px; left: 6px;
+		display: inline-block;
+	}
+
+	#image1 {
+		background-color: transparent;
+		position: absolute; top: 6px; left: 556px;
+		display: inline-block;
 	}
 </style>
 </head>
 
 <body>
-	<div id="button0">
-	<button class="w3-btn w3-white w3-border w3-border-blue w3-round" onclick="button0()">When you dream...</button>
-	</div>
 
-	<div class="bg"></div>
+
+
+
+	<!-- <div id="button1">
+	<button class="buttonA w3-btn w3-border w3-border-blue w3-round" onclick="button1()">Tap me!</button>
+	</div> -->
+
+	<div class="bg">
+		<div id="image0">
+			<img src="graphics/media-elements/low-key-ex01.jpg" alt=""/>
+				<div id="button0">
+					<button class="buttonA w3-btn w3-border w3-border-blue w3-round" onclick="button0()">You may dream anything</button>
+				</div>
+		</div>
+		<div id="image1">
+			<img src="graphics/media-elements/neon-homepage.jpg" alt=""/>
+		</div>
+	</div>
 
 
 
