@@ -79,6 +79,18 @@
 			background-color: #e66699
 		}
 
+		.buttonD {
+			background-color: transparent;
+			color: white;
+			position: absolute;
+			outline: none;
+			transition-duration: .4s;
+		}
+
+		.buttonD:hover {
+			background-color: #85c9ff
+		}
+
 		/* .buttonA:onclick {
 			animation: 3s ease 0s normal forwards 1 fadein;
 		} */
@@ -99,6 +111,13 @@
 		#button2 {
 			position: relative;
 			left: 908px; top: 252px;
+			opacity: 0;
+			transition-duration: .4s;
+		}
+
+		#button3 {
+			position: relative;
+			left: 510px; top: 75px;
 			opacity: 0;
 			transition-duration: .4s;
 		}
@@ -150,6 +169,10 @@
 		</div>
 		<div id="button2">
 			<button id="buttonC" class="buttonC w3-btn w3-border w3-border-skycolor w3-round">Or you find you have unexplained powers</button>
+		</div>
+
+		<div id="button3">
+			<button id="buttonD" class="buttonD w3-btn w3-border w3-border-blueish w3-round">You may see yourself in new ways...</button>
 		</div>
 	</div>
 
@@ -207,6 +230,27 @@
 			}
 
 			var z = document.getElementById("button3");
+			if (z.style.opacity == 0) {
+				z.style.opacity = 1;
+			}
+		}
+
+		document.getElementById("buttonD").onclick = function() {button3()};
+
+		function button3() {
+			var x = document.getElementById("image3");
+			if (x.style.opacity == 0) {
+				x.style.opacity = 1;
+			} else {
+				x.style.opacity = 0;
+			}
+
+			var y = document.getElementById("image2");
+			if (y.style.opacity == 1) {
+				y.style.opacity = 0;
+			}
+
+			var z = document.getElementById("button4");
 			if (z.style.opacity == 0) {
 				z.style.opacity = 1;
 			}
