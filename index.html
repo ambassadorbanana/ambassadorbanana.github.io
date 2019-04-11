@@ -52,14 +52,13 @@
 		} */
 
 		#button0 {
-			position: absolute;
-			left: 20%;
-			transform: translateX(-50%);
+			position: relative;
+			left: 6px; top: 253px;
 		}
 
 		#button1 {
 			position: absolute;
-			left: 50%;
+			left: ;
 
 			display: none;
 		}
@@ -67,7 +66,8 @@
 		#image0 {
 			background-color: transparent;
 			position: absolute; top: 6px; left: 6px;
-			display: inline-block;
+			display: none;
+			opacity: 0;
 		}
 
 		#image1 {
@@ -80,39 +80,31 @@
 
 <body>
 
-
-
-
 	<!-- <div id="button1">
 	<button class="buttonA w3-btn w3-border w3-border-blue w3-round" onclick="button1()">Tap me!</button>
 	</div> -->
 
 	<div class="bg"> <!-- relative -->
 		<div id="image0"> <!--absolute-->
-			<img src="graphics/media-elements/low-key-ex01.jpg" alt=""/>
-				<div id="button0"> <!--absolute-->
-					<button class="buttonA w3-btn w3-border w3-border-blue w3-round"
-					onclick="button0()">In a dream you may feel anything</button>
-				</div>
+			<img src="graphics/media-elements/low-key-ex01.jpg" alt="" style="width:370px;"/>
+		</div>
+		<div id="button0"> <!--relative-->
+			<button class="buttonA w3-btn w3-border w3-border-blue w3-round"
+			onclick="button0()">In a dream you may feel anything</button>
 		</div>
 		<div id="image1"> <!--absolute-->
 			<img src="graphics/media-elements/eric-kim-black-and-white-hands.jpg" alt="" style="width:431px;"/>
 		</div>
 	</div>
 
-
-
-
-
-<!-- <img src="graphics/media-elements/eric-kim-street-photography-black-and-white-hands-hanoimonochrome-0005801.jpg" class="center1">
-
-<div id="pic2">
-<img src="graphics/media-elements/low-key-ex01.jpg" style="width:421px;">
-</div>
-
-<div id="pic3">
-<img src="graphics/media-elements/neon-homepage.jpg" style="width:421px;">
-</div> -->
+	<script>
+		function button0() {
+		  var x = document.getElementById("image0");
+		  if (x.style.display === "none") {
+		    x.style.display = "inline-block";
+		  }
+		}
+</script>
 
 </body>
 </html>
