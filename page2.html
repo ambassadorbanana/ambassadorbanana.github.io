@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Page 2</title>
+	<meta name="generator" content="BBEdit 12.6" />
+	<link rel="stylesheet" href="default.css">
+
+	<style>
+		a:link {
+			color:blue;
+		}
+
+		a:visited {
+			color: pink;
+		}
+
+		p {
+			font-family: "Ariel", "Helvetica", sans-serif;
+			<!-- Google fonts is easy -->
+			font-size: 14px;
+			font-style: bold;
+		}
+
+		body, html {
+			height: 100%;
+			margin: 0;
+		}
+
+		.center {
+			margin-left: auto;
+  		margin-right: auto;
+		}
+
+		.bg {
+			background-image: url("graphics/media-elements/dream-sky.jpg");
+			position: relative;
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.w3-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0),0 6px 20px 0 rgba(0,0,0,0)}
+
+		.buttonA {
+			background-color: transparent;
+			color: white;
+			position: absolute;
+			outline: none;
+			transition-duration: .4s;
+		}
+
+		.buttonA:hover {
+			background-color: #2196F3
+		}
+
+		.buttonB {
+			background-color: transparent;
+			color: white;
+			position: absolute;
+			outline: none;
+			transition-duration: .4s;
+		}
+
+		.buttonB:hover {
+			background-color: #ccb200
+		}
+
+		.buttonC {
+			background-color: transparent;
+			color: white;
+			position: absolute;
+			outline: none;
+			transition-duration: .4s;
+		}
+
+		.buttonC:hover {
+			background-color: #e66699
+		}
+
+		.buttonD {
+			background-color: transparent;
+			color: white;
+			position: absolute;
+			outline: none;
+			transition-duration: .4s;
+		}
+
+		.buttonD:hover {
+			background-color: #85c9ff
+		}
+
+		#button0 {
+			position: relative;
+			left: 42px; top: 256px;
+			transition-duration: .4s;
+		}
+
+		#button1 {
+			position: relative;
+			transition-duration: .4s;
+		}
+
+		#button2 {
+			position: relative;
+			transition-duration: .4s;
+		}
+
+		#button3 {
+			position: relative;
+			transition-duration: .4s;
+		}
+
+		#image0 {
+			background-color: transparent;
+			display: inline-block;
+			transition-duration: .4s;
+		}
+
+		#image1 {
+			background-color: transparent;
+			display: inline-block;
+			transition-duration: .4s;
+		}
+
+		#image2 {
+			background-color: transparent;
+			display: inline-block;
+			transition-duration: .4s;
+		}
+	</style>
+</head>
+<body>
+
+<script>
+document.getElementById("buttonA").onclick = function() {button0()};
+
+function button0() {
+  var x = document.getElementById("image0");
+  if (x.style.opacity == 0) {
+    x.style.opacity = 1;
+  } else {
+    x.style.opacity = 0;
+  }
+
+  var y = document.getElementById("button1");
+  if (y.style.opacity == 0) {
+    y.style.opacity = 1;
+  }
+}
+</script>
+</body>
