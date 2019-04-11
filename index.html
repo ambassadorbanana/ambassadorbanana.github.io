@@ -66,7 +66,7 @@
 		#image0 {
 			background-color: transparent;
 			position: absolute; top: 6px; left: 6px;
-			display: none;
+			display: inline-block;
 			opacity: 1;
 		}
 
@@ -89,8 +89,7 @@
 			<img src="graphics/media-elements/low-key-ex01.jpg" alt="" style="width:370px;"/>
 		</div>
 		<div id="button0"> <!--relative-->
-			<button class="buttonA w3-btn w3-border w3-border-blue w3-round"
-			onclick="button0()">In a dream you may feel anything</button>
+			<button class="buttonA w3-btn w3-border w3-border-blue w3-round" onclick="button0()">In a dream you may feel anything</button>
 		</div>
 		<div id="image1"> <!--absolute-->
 			<img src="graphics/media-elements/eric-kim-black-and-white-hands.jpg" alt="" style="width:431px;"/>
@@ -100,11 +99,11 @@
 	<script>
 		function button0() {
 		  var x = document.getElementById("image0");
-		  if (x.style.display === "none") {
-		    x.style.display = "inline-block";
+		  if (x.style.display === "inline-block") {
+		    x.style.display = "none";
 		  }
 		}
-</script>
+	</script>
 
 </body>
 </html>
