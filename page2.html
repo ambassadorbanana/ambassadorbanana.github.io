@@ -114,24 +114,35 @@
 
 		#image0 {
 			background-color: transparent;
+      position: absolute;
 			display: inline-block;
 			transition-duration: .4s;
 		}
 
 		#image1 {
 			background-color: transparent;
+      position: absolute;
 			display: inline-block;
 			transition-duration: .4s;
 		}
 
 		#image2 {
 			background-color: transparent;
+      position: absolute;
 			display: inline-block;
 			transition-duration: .4s;
 		}
 	</style>
 </head>
 <body>
+<div class="bg">
+  <div id="image0"> <!--absolute-->
+    <img src="" alt="" style=""/>
+  </div>
+  <div id="button0">
+    <button id="buttonA" class="buttonA w3-btn w3-border w3-border-blue w3-round">Discover life...</button>
+  </div>
+</div>
 
 <script>
 document.getElementById("buttonA").onclick = function() {button0()};
