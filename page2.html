@@ -33,7 +33,7 @@
 		}
 
 		.bg {
-			background-image: url("graphics/media-elements/dream-sky.jpg");
+			background-image: url("graphics/media-elements/particle-constellation.png");
 			position: relative;
 			height: 100%;
 			background-position: center;
@@ -64,7 +64,7 @@
 		}
 
 		.buttonB:hover {
-			background-color: #ccb200
+			background-color: #2196F3
 		}
 
 		.buttonC {
@@ -76,7 +76,7 @@
 		}
 
 		.buttonC:hover {
-			background-color: #e66699
+			background-color: #2196F3
 		}
 
 		.buttonD {
@@ -88,77 +88,175 @@
 		}
 
 		.buttonD:hover {
-			background-color: #85c9ff
+			background-color: #2196F3
 		}
 
 		#button0 {
-			position: relative;
-			left: 42px; top: 256px;
+			position: relative; left: 20px; top: 550px;
 			transition-duration: .4s;
 		}
 
 		#button1 {
-			position: relative;
+			position: relative; left: 286px; top: 550px;
 			transition-duration: .4s;
+      opacity: 0;
 		}
 
 		#button2 {
 			position: relative;
-			transition-duration: .4s;
+			transition-duration: .4s; left: 493px; top: 550px;
+			opacity: 0;
 		}
 
 		#button3 {
 			position: relative;
-			transition-duration: .4s;
+			transition-duration: .4s; left: 684px; top: 550px;
+			opacity: 0;
 		}
 
 		#image0 {
 			background-color: transparent;
-      position: absolute;
+      position: absolute; left: 345px; top: 100px;
 			display: inline-block;
+      opacity: 0;
 			transition-duration: .4s;
 		}
 
 		#image1 {
 			background-color: transparent;
-      position: absolute;
+      position: absolute; left: 345px; top: 80px;
 			display: inline-block;
+			opacity: 0;
 			transition-duration: .4s;
 		}
 
 		#image2 {
 			background-color: transparent;
-      position: absolute;
+      position: absolute; left: 345px; top: 80px;
 			display: inline-block;
 			transition-duration: .4s;
+			opacity: 0;
+		}
+
+		#image3 {
+			background-color: transparent;
+      position: absolute; left: 450px; top: 10px;
+			display: inline-block;
+			transition-duration: .4s;
+			opacity: 0;
 		}
 	</style>
 </head>
+
 <body>
-<div class="bg">
-  <div id="image0"> <!--absolute-->
-    <img src="" alt="" style=""/>
-  </div>
-  <div id="button0">
-    <button id="buttonA" class="buttonA w3-btn w3-border w3-border-blue w3-round">Discover life...</button>
-  </div>
-</div>
+  <div class="bg">
+    <div id="image0"> <!--absolute-->
+      <img src="graphics/media-elements/baby.jpg" alt="" style="width:600px;"/>
+    </div>
+    <div id="button0">
+      <button id="buttonA" class="buttonA w3-btn w3-border w3-border-blue w3-round">...Glimpse your own beginning</button>
+    </div>
 
-<script>
-document.getElementById("buttonA").onclick = function() {button0()};
+		<div id="image1"> <!--absolute-->
+      <img src="graphics/media-elements/Mind-Blowing-Surreal-Photography-By-Bryan-Durushia-9_zpsb8da3ac5.jpg" alt="" style="width:600px;"/>
+    </div>
+    <div id="button1">
+      <button id="buttonB" class="buttonB w3-btn w3-border w3-border-blue w3-round">Or perhaps your end...</button>
+    </div>
 
-function button0() {
-  var x = document.getElementById("image0");
-  if (x.style.opacity == 0) {
-    x.style.opacity = 1;
-  } else {
-    x.style.opacity = 0;
+		<div id="image2"> <!--absolute-->
+      <img src="graphics/media-elements/drifting.jpg" alt="" style="width:600px;"/>
+    </div>
+		<div id="button2">
+			<button id="buttonC" class="buttonC w3-btn w3-border w3-border-blue w3-round">Just let yourself drift</button>
+		</div>
+
+		<div id="image3"> <!--absolute-->
+      <img src="graphics/media-elements/913ba060a0e16640240b2cfe75b59f54.png" alt="" style="width:350px;"/>
+    </div>
+		<div id="button3">
+			<button id="buttonD" class="buttonD w3-btn w3-border w3-border-blue w3-round">Eventually you'll find</button>
+		</div>
+  </div>
+
+  <script>
+  document.getElementById("buttonA").onclick = function() {button0()};
+
+  function button0() {
+    var x = document.getElementById("image0");
+    if (x.style.opacity == 0) {
+      x.style.opacity = 1;
+    } else {
+      x.style.opacity = 0;
+    }
+
+    var y = document.getElementById("button1");
+    if (y.style.opacity == 0) {
+      y.style.opacity = 1;
+    }
   }
 
-  var y = document.getElementById("button1");
-  if (y.style.opacity == 0) {
-    y.style.opacity = 1;
+	document.getElementById("buttonB").onclick = function() {button1()};
+
+	function button1() {
+		var a = document.getElementById("image0");
+		if (a.style.opacity == 1) {
+			a.style.opacity = 0;
+		}
+
+    var x = document.getElementById("image1");
+    if (x.style.opacity == 0) {
+      x.style.opacity = 1;
+    } else {
+      x.style.opacity = 0;
+    }
+
+    var y = document.getElementById("button2");
+    if (y.style.opacity == 0) {
+      y.style.opacity = 1;
+    }
   }
-}
-</script>
+
+	document.getElementById("buttonC").onclick = function() {button2()};
+
+	function button2() {
+		var a = document.getElementById("image1");
+		if (a.style.opacity == 1) {
+			a.style.opacity = 0;
+		}
+
+    var x = document.getElementById("image2");
+    if (x.style.opacity == 0) {
+      x.style.opacity = 1;
+    } else {
+      x.style.opacity = 0;
+    }
+
+    var y = document.getElementById("button3");
+    if (y.style.opacity == 0) {
+      y.style.opacity = 1;
+    }
+  }
+
+	document.getElementById("buttonD").onclick = function() {button3()};
+
+	function button3() {
+		var a = document.getElementById("image2");
+		if (a.style.opacity == 1) {
+			a.style.opacity = 0;
+		}
+
+    var x = document.getElementById("image3");
+    if (x.style.opacity == 0) {
+      x.style.opacity = 1;
+    } else {
+      x.style.opacity = 0;
+    }
+
+    var y = document.getElementById("button4");
+    if (y.style.opacity == 0) {
+      y.style.opacity = 1;
+    }
+  }
+  </script>
 </body>
