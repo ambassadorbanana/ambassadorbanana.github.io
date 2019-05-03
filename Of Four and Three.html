@@ -107,6 +107,7 @@ tw-story[tags~="realm4"] {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">var realm1Portal = 0;
 var realm2Portal = 0;
 var realm3Portal = 0;
@@ -116,6 +117,7 @@ var toRealm3 = 0;
 var keyholereveal = 0;
 var mirrorreveal = 0;
 var riftreveal = 0;
+
 
 
 
@@ -183,7 +185,7 @@ var riftreveal = 0;
 [[Back|Rift 1]]</tw-passagedata><tw-passagedata pid="14" name="Rift 3" tags="rift3" position="402,541" size="100,100">[You realize you have been wandering in a bizarre desert for who knows how long. You decide to head back before you get too lost. ](if: $riftreveal is 1)[(mouseover: &quot;head back&quot;)[The disembodied, mechanical heads call your name in dry, haunting voices as you trudge back across the tundra.]]
 [[Enter a different rift|Rift 4]]
 [[Back|Rift 2]]</tw-passagedata><tw-passagedata pid="15" name="Rift 4" tags="rift4" position="375,375" size="100,100">[Just a moment after stepping through the rift, a massive beast approaches you. You know deep in your bones that you have been waiting a long time. Something tells you that you might glean more from the rifts you visited previously.]
-(mouseover: &quot;waiting a long time&quot;)[The wolf and you stare into each other&#39;s eyes until you realize that an [understanding]&lt;tag| has been reached.](click: ?tag)[The wolf speaks inside your mind like the voice of instinct itself: &quot;Go now. You are nearly finished.&quot;]
+(mouseover: &quot;waiting a long time&quot;)[ The wolf and you stare into each other&#39;s eyes until you realize that an [understanding]&lt;tag| has been reached.](click: ?tag)[The wolf speaks inside your mind like the voice of instinct itself: &quot;Go now. You are nearly finished.&quot;]
 [[Cross Realms|Realm 1]]
 [[Back|Rift 3]]
 (set: $realm3Portal to 1)
